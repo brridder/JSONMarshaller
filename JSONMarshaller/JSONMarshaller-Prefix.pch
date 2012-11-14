@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'JSONMarshaller' target in the 'JSONMarshaller' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
