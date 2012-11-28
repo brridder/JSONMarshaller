@@ -16,6 +16,9 @@
 		DC09667B1653564C00E22AD1 /* libJSONMarshaller.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0966621653564C00E22AD1 /* libJSONMarshaller.a */; };
 		DC0966811653564C00E22AD1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DC09667F1653564C00E22AD1 /* InfoPlist.strings */; };
 		DC0966841653564C00E22AD1 /* JSONMarshallerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0966831653564C00E22AD1 /* JSONMarshallerTests.m */; };
+		DC09668F1653568D00E22AD1 /* JMObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DC09668E1653568D00E22AD1 /* JMObject.m */; };
+		DC0966921653622D00E22AD1 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0966911653622D00E22AD1 /* TestObject.m */; };
+		DC0966A11653749000E22AD1 /* ComplexTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0966A01653749000E22AD1 /* ComplexTestObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,12 @@
 		DC0966801653564C00E22AD1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DC0966821653564C00E22AD1 /* JSONMarshallerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSONMarshallerTests.h; sourceTree = "<group>"; };
 		DC0966831653564C00E22AD1 /* JSONMarshallerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSONMarshallerTests.m; sourceTree = "<group>"; };
+		DC09668D1653568D00E22AD1 /* JMObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMObject.h; sourceTree = "<group>"; };
+		DC09668E1653568D00E22AD1 /* JMObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMObject.m; sourceTree = "<group>"; };
+		DC0966901653622D00E22AD1 /* TestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
+		DC0966911653622D00E22AD1 /* TestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
+		DC09669F1653749000E22AD1 /* ComplexTestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComplexTestObject.h; sourceTree = "<group>"; };
+		DC0966A01653749000E22AD1 /* ComplexTestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComplexTestObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +123,8 @@
 				DC09666A1653564C00E22AD1 /* JSONMarshaller.h */,
 				DC09666C1653564C00E22AD1 /* JSONMarshaller.m */,
 				DC0966681653564C00E22AD1 /* Supporting Files */,
+				DC09668D1653568D00E22AD1 /* JMObject.h */,
+				DC09668E1653568D00E22AD1 /* JMObject.m */,
 			);
 			path = JSONMarshaller;
 			sourceTree = "<group>";
@@ -132,6 +143,10 @@
 				DC0966821653564C00E22AD1 /* JSONMarshallerTests.h */,
 				DC0966831653564C00E22AD1 /* JSONMarshallerTests.m */,
 				DC09667D1653564C00E22AD1 /* Supporting Files */,
+				DC0966901653622D00E22AD1 /* TestObject.h */,
+				DC0966911653622D00E22AD1 /* TestObject.m */,
+				DC09669F1653749000E22AD1 /* ComplexTestObject.h */,
+				DC0966A01653749000E22AD1 /* ComplexTestObject.m */,
 			);
 			path = JSONMarshallerTests;
 			sourceTree = "<group>";
@@ -244,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC09666D1653564C00E22AD1 /* JSONMarshaller.m in Sources */,
+				DC09668F1653568D00E22AD1 /* JMObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC0966841653564C00E22AD1 /* JSONMarshallerTests.m in Sources */,
+				DC0966921653622D00E22AD1 /* TestObject.m in Sources */,
+				DC0966A11653749000E22AD1 /* ComplexTestObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +415,7 @@
 				DC0966891653564C00E22AD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DC09668A1653564C00E22AD1 /* Build configuration list for PBXNativeTarget "JSONMarshallerTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +424,7 @@
 				DC09668C1653564C00E22AD1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
