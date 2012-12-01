@@ -19,6 +19,7 @@
 		DC09668F1653568D00E22AD1 /* JMObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DC09668E1653568D00E22AD1 /* JMObject.m */; };
 		DC0966921653622D00E22AD1 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0966911653622D00E22AD1 /* TestObject.m */; };
 		DC0966A11653749000E22AD1 /* ComplexTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0966A01653749000E22AD1 /* ComplexTestObject.m */; };
+		DCE2363D1669BEF80098561D /* ArrayTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DCE2363C1669BEF80098561D /* ArrayTestObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		DC0966911653622D00E22AD1 /* TestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
 		DC09669F1653749000E22AD1 /* ComplexTestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComplexTestObject.h; sourceTree = "<group>"; };
 		DC0966A01653749000E22AD1 /* ComplexTestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComplexTestObject.m; sourceTree = "<group>"; };
+		DCE2363B1669BEF80098561D /* ArrayTestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayTestObject.h; sourceTree = "<group>"; };
+		DCE2363C1669BEF80098561D /* ArrayTestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayTestObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +150,8 @@
 				DC0966911653622D00E22AD1 /* TestObject.m */,
 				DC09669F1653749000E22AD1 /* ComplexTestObject.h */,
 				DC0966A01653749000E22AD1 /* ComplexTestObject.m */,
+				DCE2363B1669BEF80098561D /* ArrayTestObject.h */,
+				DCE2363C1669BEF80098561D /* ArrayTestObject.m */,
 			);
 			path = JSONMarshallerTests;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 				DC0966841653564C00E22AD1 /* JSONMarshallerTests.m in Sources */,
 				DC0966921653622D00E22AD1 /* TestObject.m in Sources */,
 				DC0966A11653749000E22AD1 /* ComplexTestObject.m in Sources */,
+				DCE2363D1669BEF80098561D /* ArrayTestObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

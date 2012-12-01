@@ -45,13 +45,38 @@
             }
 //            [[(id)NSClassFromString(@"") alloc] init];
         } else if ([obj isKindOfClass:[NSArray class]]) {
-
+            NSMutableArray *newArray = [[NSMutableArray alloc] initWithCapacity:[obj count]];
+            NSString *arrayPropertyString = [self _propertyStringFromJSONKey:key];
+            NSArray *targetArray = [self performSelector:NSSelectorFromString(arrayPropertyString)];
+            Class arrayType = [self classForArrayWithName:arrayPropertyString];
+            for (id anObject in obj) {
+                if ([anObject isKindOfClass:[NSDictionary class]]) {
+                    JMObject *newObject = [[arrayType alloc] init];
+                    [newObject unmarshal:anObject];
+                    [newArray addObject:newObject];
+                } else {
+                    [newArray addObject:anObject];
+                }
+            }
+             composedObject = newArray;
         }
 
         if ([self respondsToSelector:NSSelectorFromString(selectorString)]) {
             [self performSelector:NSSelectorFromString(selectorString) withObject:composedObject];
         }
     }];
+}
+
+- (NSDictionary *)marshal;
+{
+    NSAssert(NO, @"Subclass must override this method");
+    return nil;
+}
+
+- (Class)classForArrayWithName:(NSString *)arrayName;
+{
+    NSAssert(NO, @"Subclass must override this method if arrays are expected");
+    return nil;
 }
 
 - (NSString *)_selectorStringFromJSONKey:(NSString *)key;
@@ -85,12 +110,6 @@
         [modifiedComponents addObject:component];
     }
     return [modifiedComponents componentsJoinedByString:@""];
-}
-
-- (NSDictionary *)marshal;
-{
-    NSAssert(NO, @"Subclass must override this method");
-    return nil;
 }
 
 static const char * getPropertyType(objc_property_t property) {

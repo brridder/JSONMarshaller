@@ -11,5 +11,6 @@
 @interface TestObject : JMObject
 
 @property (nonatomic, retain) NSString *aString;
+@property (nonatomic, retain) NSNumber *aNumber;
 
 @end

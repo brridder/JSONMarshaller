@@ -12,5 +12,6 @@
 
 - (void)unmarshal:(NSDictionary *)JSONDict;
 - (NSDictionary *)marshal;
+- (Class)classForArrayWithName:(NSString *)arrayName;
 
 @end
